@@ -1,0 +1,17 @@
+{
+  "name": "@team-griffin/install-self-peers",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "repository": "git@github.com:team-griffin/install-self-peers.git",
+  "author": "Joshua Thornton <joshua.thornton@heg.com>",
+  "license": "MIT",
+  "bin": {
+    "install-self-peers": "./lib/cli.js"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "ramda": "^0.23.0"
+  },
+  "peerDependencies": {
+  }
+}
