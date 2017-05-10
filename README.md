@@ -22,17 +22,19 @@ This package creates a bin, which you can execute:
 $ ./node_modules/.bin/install-self-peers
 ```
 
-#### Post-install script
+#### Package.json lifecycle
 
-Add the following script in `package.json` to trigger the cli after installing dependencies during development.
+Add the following script in `package.json` to trigger the cli after installing with dependencies.
 
 ```json
 {
   "scripts": {
-    "postinstall": "install-self-peers -- --ignore-scripts"
+    "prepare": "install-self-peers -- --ignore-scripts"
   }
 }
 ```
+
+> _It isn't recommended to use the `postinstall` event, because it is run when installing this package in other apps/libraries._
 
 ## Arguments
 
