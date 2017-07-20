@@ -9,6 +9,7 @@
     "install-self-peers": "./lib/cli.js"
   },
   "dependencies": {
+    "cross-spawn": "^5.1.0",
     "minimist": "^1.2.0",
     "ramda": "^0.23.0"
   },
